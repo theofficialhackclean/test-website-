@@ -1,170 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PrimeFlix</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
-    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="./assets/logo.ico" type="image/x-icon">
-</head>
-<body>
-    <section class="header">
-        <div class="container_Header">
-            <a href="./index.html"><span class="logo">PrimeFlix</span></a>
-            <div class="menuHeaders">
-                <div class="explore_Container">
-                    <button class="explore_Btn">
-                        <span class="text_Btn">Explore</span>
-                        <i class="fa-solid fa-caret-down arrow_Btn"></i>
-                    </button>
-                </div>
-                <div class="menu_Container">
-                    <nav class="nav_Menu">
-                        <ul class="ul_Menu">
-                            <li><a href="">Home</a></li>
-                            <li><a href="">Store</a></li>
-                            <li><a href="">Channels</a></li>
-                            <li class="category_Menu">
-                                <div class="container_Category_Btn">
-                                    <button class="category_Btn">
-                                        <span>Categories</span>
-                                        <i class="fa-solid fa-caret-down arrowDown_Btn_Category"></i>
-                                    </button>
-                                    <button class="arrowUp_Btn_Category"><i class="fa-solid fa-caret-up"></i></button>
-                                </div>
-                                <nav class="subMenu_Category">
-                                    <h5>Main Categories</h5>
-                                    <ul class="subUl_Main_Category">
-                                        <li><a href="#" class="genres_menu">Included with Primeflix</a></li>
-                                        <li><a href="#" class="genres_menu">Primeflix Exclusive</a></li>
-                                        <li><a href="#" class="genres_menu">Movies</a></li>
-                                        <li><a href="#" class="genres_menu">TV Series</a></li>
-                                        <li><a href="#" class="genres_menu">Kids</a></li>
-                                        <li><a href="#" class="genres_menu">Sports</a></li>
-                                    </ul>
-                                    <hr class="separator_MenuCategory">
-                                    <h5>Genres</h5>
-                                    <ul class="subUl_Main_Genres">
-                                        <li><a href="#" class="genres_menu">Action & Adventure</a></li>
-                                        <li><a href="#" class="genres_menu">Comedy</a></li>
-                                        <li><a href="#" class="genres_menu">Drama</a></li>
-                                        <li><a href="#" class="genres_menu">Documentaries</a></li>
-                                        <li><a href="#" class="genres_menu">Kids & Family</a></li>
-                                        <li><a href="#" class="genres_menu">Fantasy</a></li>
-                                        <li><a href="#" class="genres_menu">Horror</a></li>
-                                        <li><a href="#" class="genres_menu">Romance</a></li>
-                                        <li><a href="#" class="genres_menu">Science Fiction</a></li>
-                                        <li><a href="#" class="genres_menu">Suspense</a></li>
-                                        <li><a href="#" class="genres_menu">Anime</a></li>
-                                        <li><a href="#" class="genres_menu">War</a></li>
-                                        <li><a href="#" class="genres_menu">Sports</a></li>
-                                        <li><a href="#" class="genres_menu">Crime</a></li>
-                                    </ul>
-                                </nav> 
-                            </li>
-                            <li><a href="">Personal Area</a></li>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PrimeFlix</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./tvSeries.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="./assets/logo.ico" type="image/x-icon">
+    </head>
+    <body>
+        <section class="header">
+            <div class="container_Header">
+                <a href="./index.html"><span class="logo">PrimeFlix</span></a>
+                <div class="menuHeaders">
+                    <div class="explore_Container">
+                        <button class="explore_Btn">
+                            <span class="text_Btn">Explore</span>
+                            <i class="fa-solid fa-caret-down arrow_Btn"></i>
+                        </button>
+                    </div>
+                    <div class="menu_Container">
+                        <nav class="nav_Menu">
+                            <ul class="ul_Menu">
+                                <li><a href="">Home</a></li>
+                                <li><a href="">Store</a></li>
+                                <li><a href="">Channels</a></li>
+                                <li class="category_Menu">
+                                    <div class="container_Category_Btn">
+                                        <button class="category_Btn">
+                                            <span>Categories</span>
+                                            <i class="fa-solid fa-caret-down arrowDown_Btn_Category"></i>
+                                        </button>
+                                        <button class="arrowUp_Btn_Category"><i class="fa-solid fa-caret-up"></i></button>
+                                    </div>
+                                    <nav class="subMenu_Category">
+                                        <ul class="subUl_Main_Category">
+                                            <h5>Main Categories</h5>
+                                            <li><a href="#" class="genres_menu">Included with Primeflix</a></li>
+                                            <li><a href="#" class="genres_menu">Primeflix Exclusive</a></li>
+                                            <li><a href="#" class="genres_menu">Movies</a></li>
+                                            <li><a href="#" class="genres_menu">TV Shows</a></li>
+                                            <li><a href="#" class="genres_menu">Kids</a></li>
+                                            <li><a href="#" class="genres_menu">Sports</a></li>
+                                        </ul>
+                                        <hr class="separator_MenuCategory">
+                                        <ul class="subUl_Main_Genres">
+                                            <h5>Genres</h5>
+                                            <li><a href="#" class="genres_menu">Action & Adventure</a></li>
+                                            <li><a href="#" class="genres_menu">Comedy</a></li>
+                                            <li><a href="#" class="genres_menu">Drama</a></li>
+                                            <li><a href="#" class="genres_menu">Documentaries</a></li>
+                                            <li><a href="#" class="genres_menu">Kids & Family</a></li>
+                                            <li><a href="#" class="genres_menu">Fantasy</a></li>
+                                            <li><a href="#" class="genres_menu">Horror</a></li>
+                                            <li><a href="#" class="genres_menu">Romance</a></li>
+                                            <li><a href="#" class="genres_menu">Sci-Fi</a></li>
+                                            <li><a href="#" class="genres_menu">Suspense</a></li>
+                                            <li><a href="#" class="genres_menu">Anime</a></li>
+                                            <li><a href="#" class="genres_menu">War</a></li>
+                                            <li><a href="#" class="genres_menu">Sports</a></li>
+                                            <li><a href="#" class="genres_menu">Crime</a></li>
+                                        </ul>
+                                    </nav> 
+                                </li>
+                                <li><a href="">Personal Area</a></li>
+                            </ul>
+                        </nav>
+                        <button class="btn_Close_Menu"><i class="fa-solid fa-circle-xmark"></i></button>
+                    </div>
+                    <div class="container_Search">
+                        <button class="btn_Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <input type="text" required autocomplete="off" placeholder="Search" class="search_Bar">
+                        <button class="btn_Close_Search"><i class="fa-solid fa-xmark"></i></button>
+                    </div>
+                    <div class="container_Account">
+                        <button class="btn_Account"><i class="fa-solid fa-circle-user"></i></button>
+                    </div>
+                    <div class="menu_Account">
+                        <button class="btn_Close_Menu_Account"><i class="fa-solid fa-circle-xmark"></i></button>
+                        <ul class="ul_menu_Account">
+                            <button class="btn_Login">Login</button>
+                            <button class="btn_Logout">Logout</button>
+                            <button class="btn_Signup">Sign Up</button>
                         </ul>
-                    </nav>
-                    <button class="btn_Close_Menu"><i class="fa-solid fa-circle-xmark"></i></button>
-                </div>
-                <div class="container_Search">
-                    <button class="btn_Search"><i class="fa-solid fa-magnifying-glass"></i></button>
-                    <input type="text" required autocomplete="off" placeholder="Search" class="search_Bar">
-                    <button class="btn_Close_Search"><i class="fa-solid fa-xmark"></i></button>
-                </div>
-                <div class="container_Account">
-                    <button class="btn_Account">
-                        <i class="fa-solid fa-circle-user iconUser"></i>
-                    </button>
-                </div>
-                <div class="menu_Account">
-                    <button class="btn_Close_Menu_Account"><i class="fa-solid fa-circle-xmark"></i></button>
-                    <ul class="ul_menu_Account">
-                        <button class="btn_Login">Log In</button>
-                        <button class="btn_Logout">Log Out</button>
-                        <button class="btn_Signup">Sign Up</button>
-                    </ul>
-                </div>           
-            </div>
-        </div>
-    </section>
-    <section class="main">
-        <div class="container_Hero">
-        </div>
-        <div class="filter_Series">
-            <div class="category_Filter"></div>
-            <div class="rated_Filter"></div>
-        </div>
-        <div class="containerSeries">
-            <div class="serieTV_Popular">
-                <div class="header_SerieTV_Popular">
-                    <h2>TV Series - Most Popular</h2>
-                    <a href="#" class="discover_More">Discover More</a>
-                </div>
-                <div class="container_SerieTV_Popular">
+                    </div>
                 </div>
             </div>
-            <div class="serieTV_TopRated">
-                <div class="header_SerieTV_TopRated">
-                    <h2>TV Series - Top Rated</h2>
-                    <a href="#" class="discover_More">Discover More</a>
+        </section>
+        <section class="main">
+            <div class="container_SeriesTV">
+                <a href="http://127.0.0.1:5500/index.html" class="linkHome">
+                    <i class="fa-solid fa-house"></i>
+                    Back to HOME
+                </a>
+                <div class="choose_Season">
+                    <button class="btn_Prev" id="btn_Prev"><i class="fa-solid fa-circle-arrow-left"><span>Previous Season</span></i></button>
+                    <button class="btn_Next" id="btn_Next"><i class="fa-solid fa-circle-arrow-right"><span>Next Season</span></i></button>
                 </div>
-                <div class="container_SerieTV_TopRated">
-                </div>
+                <div class="hero_Season"></div>
+                <div class="info_SeriesTV"></div>
+                <a href="http://127.0.0.1:5500/index.html" class="linkHome">
+                    <i class="fa-solid fa-house"></i>
+                    Back to HOME
+                </a>
             </div>
-            <div class="container_modal_InfoSeries">
+            <div class="modal_Login">
+                <button class="btn_Close_Login"><i class="fa-solid fa-circle-xmark"></i></button>
+                <h3>Login</h3>
+                <form name="form_Login" class="form_Login">
+                    <input type="text" name="username" placeholder="Enter username" class="username" required autocomplete="off">
+                    <input type="password" name="password" placeholder="Enter password" class="password" required autocomplete="off">
+                    <input type="submit" value="Login" class="send_Login">
+                </form>
             </div>
+        </section>
+        <div class="container_modalLogin">
         </div>
-        <div class="rateSeries_Select">
-            <form name="rated_Form" class="rated_Form">
-                <select name="rateSeries" id="rateSeries" class="rateSeries">
-                    <option value="-">-</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                </select>
-                <input type="submit" name="btn_Rated" value="Vote!" class="btn_Rated">
-                <span class="rate"></span>
-            </form>
-        </div>
-        <div class="modal_Login">
-            <button class="btn_Close_Login"><i class="fa-solid fa-circle-xmark"></i></button>
-            <h3>Log In</h3>
-            <form name="form_Login" class="form_Login">
-                <input type="text" name="username" placeholder="Enter Username" class="username" required autocomplete="off">
-                <input type="password" name="password" placeholder="Enter Password" class="password" required autocomplete="off">
-                <input type="submit" value="Log In" class="send_Login">
-            </form>
-        </div>
-    </section>
-    <div class="container_modalLogin">
-    </div>
-    <footer>
-        <span class="logo">PrimeFlix</span>
-        <div class="sitemap">
-            <ul>
-                <li><a href="#">Terms and Information of Use</a></li>
-                <li><a href="#">Submit Feedback</a></li>
-                <li><a href="#">Help</a></li>
-                <li><a href="#">Cookie Policy</a></li>     
-            </ul>
-        </div>
-        <span class="author">Made with ❤️ by Giulio Simone Floresta</span>
-    </footer>
-    <script src="./script.js" type="module"></script>
-</body>
+        <footer>
+            <span class="logo">PrimeFlix</span>
+            <div class="sitemap">
+                <ul>
+                    <li><a href="#">Terms and Usage Information</a></li>
+                    <li><a href="#">Submit Feedback</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                    <li class="author">Made with ❤️ by Giulio Simone Floresta</li>
+                </ul>
+            </div>
+        </footer>
+        <script src="./script.js" type="module"></script>
+        <script src="./tvSeries.js" type="module"></script>
+    </body>
 </html>
+<!--TI VEDO CHE SPII IL MIO CODICE-->
